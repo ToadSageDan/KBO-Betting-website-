@@ -9,10 +9,10 @@ const KBO_DATA = {
     { id: "NC",  name: "NC Dinos",       city: "Changwon",  stadium: "Changwon NC Park",               color: "#071D49" },
     { id: "KIA", name: "KIA Tigers",     city: "Gwangju",   stadium: "Gwangju-Kia Champions Field",    color: "#EA0029" },
     { id: "OB",  name: "Doosan Bears",   city: "Seoul",     stadium: "Jamsil Baseball Stadium",        color: "#131230" },
-    { id: "SK",  name: "Hanwha Eagles",  city: "Daejeon",   stadium: "Hanwha Life Eagles Park",        color: "#FF6600" },
+    { id: "HH",  name: "Hanwha Eagles",  city: "Daejeon",   stadium: "Hanwha Life Eagles Park",        color: "#FF6600" },
     { id: "LOT", name: "Lotte Giants",   city: "Busan",     stadium: "Sajik Baseball Stadium",         color: "#002B5C" },
     { id: "SAM", name: "Samsung Lions",  city: "Daegu",     stadium: "Daegu Samsung Lions Park",       color: "#074CA1" },
-    { id: "HAN", name: "Kiwoom Heroes",  city: "Seoul",     stadium: "Gocheok Sky Dome",               color: "#820024" }
+    { id: "KW", name: "Kiwoom Heroes",  city: "Seoul",     stadium: "Gocheok Sky Dome",               color: "#820024" }
   ],
 
   pitchers: [
@@ -28,10 +28,10 @@ const KBO_DATA = {
         NC:  { era: 2.08, ip: 21.2, k: 25, bb: 4, record: "3-0" },
         KIA: { era: 4.15, ip: 13.0, k: 12, bb: 7, record: "1-2" },
         OB:  { era: 3.00, ip: 18.0, k: 19, bb: 5, record: "2-1" },
-        SK:  { era: 2.61, ip: 20.2, k: 24, bb: 3, record: "3-1" },
+        HH:  { era: 2.61, ip: 20.2, k: 24, bb: 3, record: "3-1" },
         LOT: { era: 1.93, ip: 14.0, k: 18, bb: 2, record: "3-0" },
         SAM: { era: 3.38, ip: 10.2, k: 10, bb: 5, record: "1-2" },
-        HAN: { era: 2.70, ip: 13.1, k: 15, bb: 4, record: "2-1" }
+        KW: { era: 2.70, ip: 13.1, k: 15, bb: 4, record: "2-1" }
       },
       last5: [
         { date: "2026-08-10", opp: "LG",  result: "W", ip: 7.0, er: 1, k: 9,  bb: 2 },
@@ -46,10 +46,10 @@ const KBO_DATA = {
         { date: "2026-07-30", opp: "NC",  result: "W", ip: 8.0, er: 0, k: 11, bb: 1 },
         { date: "2026-07-25", opp: "KIA", result: "W", ip: 6.1, er: 2, k: 7,  bb: 2 },
         { date: "2026-07-20", opp: "OB",  result: "W", ip: 7.2, er: 1, k: 10, bb: 1 },
-        { date: "2026-07-15", opp: "SK",  result: "W", ip: 7.0, er: 2, k: 8,  bb: 2 },
+        { date: "2026-07-15", opp: "HH",  result: "W", ip: 7.0, er: 2, k: 8,  bb: 2 },
         { date: "2026-07-10", opp: "LOT", result: "W", ip: 8.1, er: 1, k: 9,  bb: 0 },
         { date: "2026-07-05", opp: "SAM", result: "L", ip: 5.0, er: 3, k: 5,  bb: 4 },
-        { date: "2026-06-30", opp: "HAN", result: "W", ip: 7.0, er: 2, k: 8,  bb: 1 },
+        { date: "2026-06-30", opp: "KW", result: "W", ip: 7.0, er: 2, k: 8,  bb: 1 },
         { date: "2026-06-25", opp: "LG",  result: "W", ip: 6.2, er: 1, k: 7,  bb: 2 }
       ],
       situational: {
@@ -73,10 +73,10 @@ const KBO_DATA = {
         NC:  { era: 3.86, ip: 11.2, k: 11, bb: 6, record: "1-2" },
         KIA: { era: 2.45, ip: 18.1, k: 20, bb: 3, record: "3-0" },
         OB:  { era: 4.50, ip: 12.0, k: 10, bb: 8, record: "1-2" },
-        SK:  { era: 2.89, ip: 18.2, k: 19, bb: 5, record: "3-1" },
+        HH:  { era: 2.89, ip: 18.2, k: 19, bb: 5, record: "3-1" },
         LOT: { era: 3.14, ip: 14.1, k: 14, bb: 4, record: "2-1" },
         SAM: { era: 2.61, ip: 20.2, k: 22, bb: 4, record: "3-0" },
-        HAN: { era: 3.45, ip: 13.0, k: 12, bb: 6, record: "2-2" }
+        KW: { era: 3.45, ip: 13.0, k: 12, bb: 6, record: "2-2" }
       },
       last5: [
         { date: "2026-08-11", opp: "KT",  result: "L", ip: 5.1, er: 3, k: 6, bb: 3 },
@@ -91,10 +91,10 @@ const KBO_DATA = {
         { date: "2026-08-01", opp: "NC",  result: "L", ip: 4.2, er: 4, k: 5,  bb: 4 },
         { date: "2026-07-26", opp: "KIA", result: "W", ip: 8.0, er: 1, k: 9,  bb: 1 },
         { date: "2026-07-21", opp: "OB",  result: "L", ip: 5.0, er: 4, k: 4,  bb: 5 },
-        { date: "2026-07-16", opp: "SK",  result: "W", ip: 7.1, er: 2, k: 8,  bb: 2 },
+        { date: "2026-07-16", opp: "HH",  result: "W", ip: 7.1, er: 2, k: 8,  bb: 2 },
         { date: "2026-07-11", opp: "LOT", result: "W", ip: 6.0, er: 1, k: 7,  bb: 3 },
         { date: "2026-07-06", opp: "SAM", result: "W", ip: 8.0, er: 0, k: 10, bb: 1 },
-        { date: "2026-07-01", opp: "HAN", result: "W", ip: 6.2, er: 3, k: 7,  bb: 2 },
+        { date: "2026-07-01", opp: "KW", result: "W", ip: 6.2, er: 3, k: 7,  bb: 2 },
         { date: "2026-06-26", opp: "KT",  result: "L", ip: 4.1, er: 5, k: 4,  bb: 4 }
       ],
       situational: {
@@ -118,10 +118,10 @@ const KBO_DATA = {
         NC:  { era: 2.08, ip: 21.2, k: 26, bb: 3, record: "3-0" },
         KIA: { era: 3.45, ip: 15.2, k: 17, bb: 6, record: "2-1" },
         OB:  { era: 2.70, ip: 20.0, k: 23, bb: 4, record: "3-1" },
-        SK:  { era: 1.89, ip: 19.0, k: 24, bb: 3, record: "3-0" },
+        HH:  { era: 1.89, ip: 19.0, k: 24, bb: 3, record: "3-0" },
         LOT: { era: 2.45, ip: 14.2, k: 18, bb: 2, record: "2-0" },
         SAM: { era: 3.21, ip: 11.1, k: 13, bb: 4, record: "1-1" },
-        HAN: { era: 2.89, ip: 9.1,  k: 11, bb: 2, record: "2-1" }
+        KW: { era: 2.89, ip: 9.1,  k: 11, bb: 2, record: "2-1" }
       },
       last5: [
         { date: "2026-08-09", opp: "KT",  result: "W", ip: 8.0, er: 1, k: 10, bb: 1 },
@@ -136,10 +136,10 @@ const KBO_DATA = {
         { date: "2026-07-30", opp: "NC",  result: "W", ip: 9.0, er: 0, k: 12, bb: 0 },
         { date: "2026-07-25", opp: "KIA", result: "W", ip: 7.0, er: 2, k: 8,  bb: 2 },
         { date: "2026-07-20", opp: "OB",  result: "L", ip: 5.2, er: 4, k: 6,  bb: 3 },
-        { date: "2026-07-15", opp: "SK",  result: "W", ip: 7.1, er: 0, k: 9,  bb: 1 },
+        { date: "2026-07-15", opp: "HH",  result: "W", ip: 7.1, er: 0, k: 9,  bb: 1 },
         { date: "2026-07-10", opp: "LOT", result: "W", ip: 8.0, er: 1, k: 11, bb: 1 },
         { date: "2026-07-05", opp: "SAM", result: "W", ip: 7.0, er: 2, k: 8,  bb: 2 },
-        { date: "2026-06-30", opp: "HAN", result: "W", ip: 8.1, er: 1, k: 10, bb: 0 },
+        { date: "2026-06-30", opp: "KW", result: "W", ip: 8.1, er: 1, k: 10, bb: 0 },
         { date: "2026-06-25", opp: "KT",  result: "L", ip: 4.2, er: 5, k: 5,  bb: 4 }
       ],
       situational: {
@@ -163,10 +163,10 @@ const KBO_DATA = {
         SSG: { era: 3.86, ip: 11.2, k: 10, bb: 6, record: "1-2" },
         KIA: { era: 2.89, ip: 15.2, k: 15, bb: 4, record: "2-1" },
         OB:  { era: 3.45, ip: 13.0, k: 12, bb: 5, record: "1-2" },
-        SK:  { era: 3.00, ip: 15.0, k: 14, bb: 4, record: "2-1" },
+        HH:  { era: 3.00, ip: 15.0, k: 14, bb: 4, record: "2-1" },
         LOT: { era: 4.15, ip: 13.0, k: 11, bb: 6, record: "1-2" },
         SAM: { era: 2.70, ip: 13.1, k: 13, bb: 4, record: "2-1" },
-        HAN: { era: 3.12, ip: 10.1, k: 9,  bb: 4, record: "1-1" }
+        KW: { era: 3.12, ip: 10.1, k: 9,  bb: 4, record: "1-1" }
       },
       last5: [
         { date: "2026-08-10", opp: "KT",  result: "W", ip: 6.0, er: 2, k: 7, bb: 3 },
@@ -181,10 +181,10 @@ const KBO_DATA = {
         { date: "2026-07-31", opp: "SSG", result: "L", ip: 5.0, er: 4, k: 5, bb: 4 },
         { date: "2026-07-26", opp: "KIA", result: "W", ip: 7.0, er: 2, k: 8, bb: 2 },
         { date: "2026-07-21", opp: "OB",  result: "W", ip: 6.1, er: 2, k: 7, bb: 3 },
-        { date: "2026-07-16", opp: "SK",  result: "W", ip: 6.0, er: 2, k: 6, bb: 2 },
+        { date: "2026-07-16", opp: "HH",  result: "W", ip: 6.0, er: 2, k: 6, bb: 2 },
         { date: "2026-07-11", opp: "LOT", result: "L", ip: 4.1, er: 5, k: 4, bb: 5 },
         { date: "2026-07-06", opp: "SAM", result: "W", ip: 7.0, er: 1, k: 8, bb: 2 },
-        { date: "2026-07-01", opp: "HAN", result: "W", ip: 6.2, er: 2, k: 7, bb: 3 },
+        { date: "2026-07-01", opp: "KW", result: "W", ip: 6.2, er: 2, k: 7, bb: 3 },
         { date: "2026-06-26", opp: "KT",  result: "L", ip: 4.2, er: 4, k: 5, bb: 4 }
       ],
       situational: {
@@ -208,10 +208,10 @@ const KBO_DATA = {
         SSG: { era: 4.15, ip: 13.0, k: 13, bb: 6, record: "1-2" },
         NC:  { era: 2.45, ip: 18.1, k: 20, bb: 3, record: "3-0" },
         OB:  { era: 3.21, ip: 16.2, k: 16, bb: 5, record: "2-2" },
-        SK:  { era: 2.70, ip: 16.2, k: 18, bb: 4, record: "2-1" },
+        HH:  { era: 2.70, ip: 16.2, k: 18, bb: 4, record: "2-1" },
         LOT: { era: 3.86, ip: 14.0, k: 13, bb: 5, record: "1-2" },
         SAM: { era: 2.61, ip: 17.1, k: 19, bb: 3, record: "3-0" },
-        HAN: { era: 3.00, ip: 12.0, k: 12, bb: 4, record: "2-1" }
+        KW: { era: 3.00, ip: 12.0, k: 12, bb: 4, record: "2-1" }
       },
       last5: [
         { date: "2026-08-09", opp: "KT",  result: "W", ip: 7.2, er: 2, k: 9,  bb: 2 },
@@ -226,10 +226,10 @@ const KBO_DATA = {
         { date: "2026-07-30", opp: "SSG", result: "L", ip: 5.1, er: 4, k: 6,  bb: 3 },
         { date: "2026-07-25", opp: "NC",  result: "W", ip: 8.0, er: 0, k: 10, bb: 1 },
         { date: "2026-07-20", opp: "OB",  result: "W", ip: 7.0, er: 2, k: 8,  bb: 2 },
-        { date: "2026-07-15", opp: "SK",  result: "W", ip: 6.1, er: 2, k: 7,  bb: 2 },
+        { date: "2026-07-15", opp: "HH",  result: "W", ip: 6.1, er: 2, k: 7,  bb: 2 },
         { date: "2026-07-10", opp: "LOT", result: "L", ip: 4.2, er: 5, k: 5,  bb: 4 },
         { date: "2026-07-05", opp: "SAM", result: "W", ip: 7.2, er: 1, k: 9,  bb: 1 },
-        { date: "2026-06-30", opp: "HAN", result: "W", ip: 7.0, er: 2, k: 8,  bb: 2 },
+        { date: "2026-06-30", opp: "KW", result: "W", ip: 7.0, er: 2, k: 8,  bb: 2 },
         { date: "2026-06-25", opp: "KT",  result: "W", ip: 6.2, er: 1, k: 7,  bb: 2 }
       ],
       situational: {
@@ -253,10 +253,10 @@ const KBO_DATA = {
         SSG: { era: 3.86, ip: 14.0, k: 16, bb: 5, record: "1-2" },
         NC:  { era: 2.70, ip: 16.2, k: 21, bb: 4, record: "3-0" },
         KIA: { era: 3.45, ip: 15.2, k: 18, bb: 4, record: "2-1" },
-        SK:  { era: 2.25, ip: 20.0, k: 26, bb: 3, record: "3-0" },
+        HH:  { era: 2.25, ip: 20.0, k: 26, bb: 3, record: "3-0" },
         LOT: { era: 2.89, ip: 15.2, k: 19, bb: 4, record: "2-1" },
         SAM: { era: 4.15, ip: 13.0, k: 15, bb: 6, record: "1-2" },
-        HAN: { era: 3.21, ip: 15.0, k: 18, bb: 4, record: "2-1" }
+        KW: { era: 3.21, ip: 15.0, k: 18, bb: 4, record: "2-1" }
       },
       last5: [
         { date: "2026-08-10", opp: "LG",  result: "W", ip: 7.0, er: 1, k: 10, bb: 2 },
@@ -271,10 +271,10 @@ const KBO_DATA = {
         { date: "2026-07-31", opp: "NC",  result: "W", ip: 7.2, er: 1, k: 10, bb: 2 },
         { date: "2026-07-26", opp: "KIA", result: "L", ip: 5.0, er: 4, k: 7,  bb: 3 },
         { date: "2026-07-21", opp: "KT",  result: "W", ip: 6.1, er: 2, k: 9,  bb: 2 },
-        { date: "2026-07-16", opp: "SK",  result: "W", ip: 7.0, er: 0, k: 10, bb: 1 },
+        { date: "2026-07-16", opp: "HH",  result: "W", ip: 7.0, er: 0, k: 10, bb: 1 },
         { date: "2026-07-11", opp: "LOT", result: "W", ip: 7.2, er: 2, k: 9,  bb: 1 },
         { date: "2026-07-06", opp: "SAM", result: "L", ip: 4.2, er: 5, k: 6,  bb: 4 },
-        { date: "2026-07-01", opp: "HAN", result: "W", ip: 8.0, er: 1, k: 11, bb: 1 },
+        { date: "2026-07-01", opp: "KW", result: "W", ip: 8.0, er: 1, k: 11, bb: 1 },
         { date: "2026-06-26", opp: "LG",  result: "W", ip: 7.1, er: 2, k: 9,  bb: 2 }
       ],
       situational: {
@@ -295,10 +295,10 @@ const KBO_DATA = {
     NC:  { wins: 52, losses: 58, runsScored: 465, runsAllowed: 498, last10: "4-6", last5: "2-3", homeRecord: "27-28", awayRecord: "25-30", runsPerGame: 4.2, runsByInning: [0.4,0.4,0.4,0.5,0.5,0.5,0.4,0.4,0.3], bullpenEra: 4.12, teamEra: 3.89 },
     KIA: { wins: 60, losses: 50, runsScored: 507, runsAllowed: 452, last10: "6-4", last5: "3-2", homeRecord: "31-24", awayRecord: "29-26", runsPerGame: 4.6, runsByInning: [0.4,0.5,0.5,0.5,0.6,0.5,0.5,0.5,0.4], bullpenEra: 3.62, teamEra: 3.38 },
     OB:  { wins: 61, losses: 49, runsScored: 519, runsAllowed: 445, last10: "6-4", last5: "4-1", homeRecord: "32-23", awayRecord: "29-26", runsPerGame: 4.7, runsByInning: [0.5,0.5,0.6,0.5,0.6,0.5,0.5,0.5,0.4], bullpenEra: 3.42, teamEra: 3.18 },
-    SK:  { wins: 49, losses: 61, runsScored: 441, runsAllowed: 512, last10: "3-7", last5: "1-4", homeRecord: "26-29", awayRecord: "23-32", runsPerGame: 4.0, runsByInning: [0.3,0.4,0.4,0.4,0.5,0.4,0.4,0.4,0.3], bullpenEra: 4.55, teamEra: 4.21 },
+    HH:  { wins: 49, losses: 61, runsScored: 441, runsAllowed: 512, last10: "3-7", last5: "1-4", homeRecord: "26-29", awayRecord: "23-32", runsPerGame: 4.0, runsByInning: [0.3,0.4,0.4,0.4,0.5,0.4,0.4,0.4,0.3], bullpenEra: 4.55, teamEra: 4.21 },
     LOT: { wins: 54, losses: 56, runsScored: 472, runsAllowed: 489, last10: "5-5", last5: "2-3", homeRecord: "28-27", awayRecord: "26-29", runsPerGame: 4.3, runsByInning: [0.4,0.4,0.5,0.4,0.5,0.5,0.4,0.4,0.3], bullpenEra: 3.98, teamEra: 3.72 },
     SAM: { wins: 57, losses: 53, runsScored: 489, runsAllowed: 471, last10: "5-5", last5: "3-2", homeRecord: "29-26", awayRecord: "28-27", runsPerGame: 4.4, runsByInning: [0.4,0.5,0.5,0.5,0.5,0.5,0.4,0.4,0.4], bullpenEra: 3.78, teamEra: 3.55 },
-    HAN: { wins: 51, losses: 59, runsScored: 451, runsAllowed: 503, last10: "4-6", last5: "2-3", homeRecord: "27-28", awayRecord: "24-31", runsPerGame: 4.1, runsByInning: [0.3,0.4,0.4,0.4,0.5,0.4,0.4,0.4,0.3], bullpenEra: 4.32, teamEra: 4.05 }
+    KW: { wins: 51, losses: 59, runsScored: 451, runsAllowed: 503, last10: "4-6", last5: "2-3", homeRecord: "27-28", awayRecord: "24-31", runsPerGame: 4.1, runsByInning: [0.3,0.4,0.4,0.4,0.5,0.4,0.4,0.4,0.3], bullpenEra: 4.32, teamEra: 4.05 }
   },
 
   batters: [
@@ -362,7 +362,7 @@ const KBO_DATA = {
     { gameId: "g001", homeTeam: "KT",  awayTeam: "LG",  time: "18:30", homePitcher: "p001", awayPitcher: "p002", stadium: "Suwon KT Wiz Park",         moneylineHome: -125, moneylineAway: +105, overUnder: 8.5, overOdds: -110, underOdds: -110, spread: -1.5, spreadOdds: +140 },
     { gameId: "g002", homeTeam: "SSG", awayTeam: "KIA", time: "18:30", homePitcher: "p003", awayPitcher: "p005", stadium: "SSG Landers Field",          moneylineHome: -165, moneylineAway: +140, overUnder: 7.5, overOdds: -115, underOdds: -105, spread: -1.5, spreadOdds: +125 },
     { gameId: "g003", homeTeam: "OB",  awayTeam: "NC",  time: "18:30", homePitcher: "p006", awayPitcher: "p004", stadium: "Jamsil Baseball Stadium",    moneylineHome: -145, moneylineAway: +122, overUnder: 8.0, overOdds: -110, underOdds: -110, spread: -1.5, spreadOdds: +130 },
-    { gameId: "g004", homeTeam: "SAM", awayTeam: "SK",  time: "18:30", homePitcher: null,   awayPitcher: null,   stadium: "Daegu Samsung Lions Park",   moneylineHome: -110, moneylineAway: -110, overUnder: 9.0, overOdds: -115, underOdds: -105, spread: -1.5, spreadOdds: +160 },
-    { gameId: "g005", homeTeam: "LOT", awayTeam: "HAN", time: "18:30", homePitcher: null,   awayPitcher: null,   stadium: "Sajik Baseball Stadium",     moneylineHome: -115, moneylineAway: -105, overUnder: 8.5, overOdds: -110, underOdds: -110, spread: -1.5, spreadOdds: +155 }
+    { gameId: "g004", homeTeam: "SAM", awayTeam: "HH",  time: "18:30", homePitcher: null,   awayPitcher: null,   stadium: "Daegu Samsung Lions Park",   moneylineHome: -110, moneylineAway: -110, overUnder: 9.0, overOdds: -115, underOdds: -105, spread: -1.5, spreadOdds: +160 },
+    { gameId: "g005", homeTeam: "LOT", awayTeam: "KW", time: "18:30", homePitcher: null,   awayPitcher: null,   stadium: "Sajik Baseball Stadium",     moneylineHome: -115, moneylineAway: -105, overUnder: 8.5, overOdds: -110, underOdds: -110, spread: -1.5, spreadOdds: +155 }
   ]
 };

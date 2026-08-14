@@ -115,6 +115,11 @@
     const gamesEl = document.getElementById('dashboard-games');
     if (gamesEl) gamesEl.innerHTML = KBO_DATA.todaysGames.map(renderGameCard).join('');
 
+    const dateBadge = document.getElementById('today-date-badge');
+    if (dateBadge) {
+      dateBadge.textContent = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+    }
+
     const hotEl = document.getElementById('hot-pitchers');
     if (hotEl) {
       const pitchersWithEra = KBO_DATA.pitchers.map(p => ({
@@ -909,7 +914,7 @@
             <span class="slider-label">Bankroll ($)</span>
             <span class="slider-value" id="bankroll-val">1000</span>
           </div>
-          <input type="range" min="100" max="10000" step="50" value="1000"
+          <input type="range" id="bankroll-slider" min="100" max="10000" step="50" value="1000"
             oninput="document.getElementById('bankroll-val').textContent=this.value;App.calcKelly()">
         </div>
         <button class="btn btn-success" onclick="App.calcKelly()" style="width:100%;margin-bottom:10px">Calculate</button>
@@ -1032,7 +1037,7 @@
       const result = document.getElementById('odds-result');
       if (isNaN(odds)) { result.innerHTML = '<span style="color:var(--accent-danger)">Invalid input.</span>'; return; }
       const imp  = oddsToProb(odds).toFixed(2);
-      const dec  = odds < 0 ? (1 - 100/odds).toFixed(3) : (odds/100 + 1).toFixed(3);
+      const dec  = odds < 0 ? (100 / (-odds) + 1).toFixed(3) : (odds / 100 + 1).toFixed(3);
       const frac = odds < 0 ? `100/${-odds}` : `${odds}/100`;
       result.innerHTML = `
         <div class="stat-row"><span class="stat-label">Implied Prob</span><span class="stat-value">${imp}%</span></div>
@@ -1042,7 +1047,7 @@
     calcKelly() {
       const winPct  = parseFloat(document.getElementById('kelly-win').value) / 100;
       const odds    = parseInt(document.getElementById('kelly-odds').value);
-      const bankroll = parseInt(document.querySelector('input[type="range"]').value);
+      const bankroll = parseInt(document.getElementById('bankroll-slider').value);
       const result   = document.getElementById('kelly-result');
       if (isNaN(winPct) || isNaN(odds) || isNaN(bankroll)) {
         result.innerHTML = '<span style="color:var(--accent-danger)">Fill all fields.</span>'; return;
