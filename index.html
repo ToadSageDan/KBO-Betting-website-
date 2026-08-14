@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KBO Edge — Korean Baseball Betting Analytics</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       HEADER
+  ═══════════════════════════════════════ -->
+  <header>
+    <div class="logo">KBO <span>Edge</span></div>
+
+    <nav>
+      <button data-page="dashboard" class="active">🏠 Dashboard</button>
+      <button data-page="matchup">⚔️ Matchup</button>
+      <button data-page="pitchers">⚾ Pitchers</button>
+      <button data-page="teams">🏆 Teams</button>
+      <button data-page="standings">📋 Standings</button>
+      <button data-page="runs">🏃 Runs</button>
+      <button data-page="weather">🌤️ Weather</button>
+      <button data-page="tools">🎰 Tools</button>
+    </nav>
+
+    <div class="header-right">
+      <button class="theme-toggle" id="theme-btn">☀️ Light</button>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════
+       MAIN
+  ═══════════════════════════════════════ -->
+  <main>
+
+    <!-- ─── DASHBOARD ─── -->
+    <div class="page active" id="page-dashboard">
+      <div class="section-header">
+        <div class="section-title">
+          <span class="icon">📅</span> Today's Games
+          <span class="badge badge-blue" style="margin-left:6px">Aug 14, 2026</span>
+        </div>
+        <span style="font-size:12px;color:var(--text-muted)">Click a game to open Matchup Analyzer</span>
+      </div>
+      <div class="games-grid" id="dashboard-games">
+        <!-- Populated by JS -->
+      </div>
+
+      <!-- QUICK STATS -->
+      <div class="section-header" style="margin-top:24px">
+        <div class="section-title"><span class="icon">🔥</span> Hot Pitchers (Last 5)</div>
+      </div>
+      <div class="grid-4" id="hot-pitchers">
+        <!-- Populated by JS on dashboard render -->
+      </div>
+    </div>
+
+    <!-- ─── MATCHUP ANALYZER ─── -->
+    <div class="page" id="page-matchup">
+      <div id="matchup-content">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+
+    <!-- ─── PITCHERS ─── -->
+    <div class="page" id="page-pitchers">
+      <div id="pitchers-content">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+
+    <!-- ─── TEAMS ─── -->
+    <div class="page" id="page-teams">
+      <div id="teams-content">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+
+    <!-- ─── STANDINGS ─── -->
+    <div class="page" id="page-standings">
+      <div id="standings-content">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+
+    <!-- ─── RUNS TRACKER ─── -->
+    <div class="page" id="page-runs">
+      <div id="runs-content">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+
+    <!-- ─── WEATHER ─── -->
+    <div class="page" id="page-weather">
+      <div id="weather-content">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+
+    <!-- ─── BETTING TOOLS ─── -->
+    <div class="page" id="page-tools">
+      <div id="tools-content">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       SCRIPTS
+  ═══════════════════════════════════════ -->
+  <script src="data/kbo_data.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
